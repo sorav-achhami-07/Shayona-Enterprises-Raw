@@ -20,30 +20,17 @@
         const mobileMedia = window.matchMedia('(max-width: 1180px)');
 
         const productData = {
-        'wall-panels': { title: 'Wall Panels', description: 'Surface statements made for exceptional interiors.', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1500&q=85', alt: 'Warm wood panelled interior' },
-        doors: { title: 'Doors', description: 'Distinctive entrances with a refined architectural finish.', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1500&q=85', alt: 'Elegant timber doorway' },
-        'laminate-wood': { title: 'Laminates & Wood', description: 'Natural character and durable texture for every surface.', image: 'https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1500&q=85', alt: 'Warm wood furniture details' },
-        veneers: { title: 'Laminates & Veneers', description: 'Layered beauty, selected for rich detail and lasting appeal.', image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1500&q=85', alt: 'Refined interior wood finishes' },
-        flooring: { title: 'Flooring', description: 'A foundation of warmth, designed to stand the test of time.', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1500&q=85', alt: 'Contemporary room with wood flooring' },
-        sheets: { title: 'Acrylic & Decorative Sheets', description: 'High-finish surfaces for a contemporary point of view.', image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1500&q=85', alt: 'Modern decorative surface interior' },
-        moulding: { title: 'Wall Moulding & Bending', description: 'Architectural details that give walls graceful dimension.', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1500&q=85', alt: 'Detailed interior wall moulding' },
-        furniture: { title: 'Furniture', description: 'Comfort, craft and form for a space that feels complete.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1500&q=85', alt: 'Contemporary furniture in a warm living room' },
-        kitchens: { title: 'Modular Kitchens', description: 'Functionally crafted kitchens with enduring material beauty.', image: 'https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1500&q=85', alt: 'Premium modular kitchen' },
-        accessories: { title: 'Interior Accessories', description: 'The finishing pieces that bring a considered interior together.', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1500&q=85', alt: 'Carefully styled interior accessories' }
+        'wall-panels': { title: 'Wall Panels', description: 'Surface statements made for exceptional interiors.', image: '', alt: 'Warm wood panelled interior' },
+        doors: { title: 'Doors', description: 'Distinctive entrances with a refined architectural finish.', image: '', alt: 'Elegant timber doorway' },
+        'laminate-wood': { title: 'Laminates & Wood', description: 'Natural character and durable texture for every surface.', image: '', alt: 'Warm wood furniture details' },
+        veneers: { title: 'Laminates & Veneers', description: 'Layered beauty, selected for rich detail and lasting appeal.', image: '', alt: 'Refined interior wood finishes' },
+        flooring: { title: 'Flooring', description: 'A foundation of warmth, designed to stand the test of time.', image: '', alt: 'Contemporary room with wood flooring' },
+        sheets: { title: 'Acrylic & Decorative Sheets', description: 'High-finish surfaces for a contemporary point of view.', image: '', alt: 'Modern decorative surface interior' },
+        moulding: { title: 'Wall Moulding & Bending', description: 'Architectural details that give walls graceful dimension.', image: '', alt: 'Detailed interior wall moulding' },
+        furniture: { title: 'Furniture', description: 'Comfort, craft and form for a space that feels complete.', image: '', alt: 'Contemporary furniture in a warm living room' },
+        kitchens: { title: 'Modular Kitchens', description: 'Functionally crafted kitchens with enduring material beauty.', image: '', alt: 'Premium modular kitchen' },
+        accessories: { title: 'Interior Accessories', description: 'The finishing pieces that bring a considered interior together.', image: '', alt: 'Carefully styled interior accessories' }
         };
-
-        // const productData = {
-        //   'wall-panels': { title: 'Wall Panels', description: 'Surface statements made for exceptional interiors.', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1500&q=85', alt: 'Warm wood panelled interior' },
-        //   doors: { title: 'Doors', description: 'Distinctive entrances with a refined architectural finish.', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1500&q=85', alt: 'Elegant timber doorway' },
-        //   'laminate-wood': { title: 'Laminates', description: 'Natural character and durable texture for every surface.', image: 'https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1500&q=85', alt: 'Warm wood furniture details' },
-        //   veneers: { title: 'Plywood & Boards', description: 'Layered beauty, selected for rich detail and lasting appeal.', image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1500&q=85', alt: 'Refined interior wood finishes' },
-        //   flooring: { title: 'Acrylic & Decorative Sheets', description: 'A foundation of warmth, designed to stand the test of time.', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1500&q=85', alt: 'Contemporary room with wood flooring' },
-        //   sheets: { title: 'Acrylic & Decorative Sheets', description: 'High-finish surfaces for a contemporary point of view.', image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1500&q=85', alt: 'Modern decorative surface interior' },
-        //   moulding: { title: 'Funitures', description: 'Architectural details that give walls graceful dimension.', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1500&q=85', alt: 'Detailed interior wall moulding' },
-        //   furniture: { title: 'Furniture', description: 'Comfort, craft and form for a space that feels complete.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1500&q=85', alt: 'Contemporary furniture in a warm living room' },
-        //   kitchens: { title: 'Modular Kitchens', description: 'Functionally crafted kitchens with enduring material beauty.', image: 'https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1500&q=85', alt: 'Premium modular kitchen' },
-        //   accessories: { title: 'Interior Accessories', description: 'The finishing pieces that bring a considered interior together.', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1500&q=85', alt: 'Carefully styled interior accessories' }
-        // };
 
         let closeTimer;
         let productSwapTimer;
