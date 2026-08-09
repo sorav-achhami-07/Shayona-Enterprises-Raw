@@ -1,0 +1,199 @@
+<!-- <!doctype html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shayona Enterprises — premium interior surfaces and furniture." />
+    <title>Shayona Enterprises | Header Preview</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+          margin: 0px;
+        }
+        #sec2{
+          background-color: rgb(107, 107, 107);
+        }
+        .header--scrolled .top-band {
+          transform: translateY(-100%);
+          opacity: 0;
+          max-height: 0;
+          border-width: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <!-- top bar -->
+      <div class="top-band" aria-label="Shayona product specialties">
+        <div class="top-band__inner">
+          <div class="specialties" aria-label="Interior, furniture and kitchen">
+            <span class="ornament ornament--left" aria-hidden="true">❧</span>
+            <span class="ornament-line" aria-hidden="true"></span>
+            <span class="specialties__copy">INTERIOR <b>•</b> FURNITURE <b>•</b> KITCHEN</span>
+            <span class="ornament-line" aria-hidden="true"></span>
+            <span class="ornament ornament--right" aria-hidden="true">☙</span>
+          </div>
+          <!-- sorav : calling icon -->
+          <!-- <a class="top-phone" href="tel:0847652379" aria-label="Call Shayona Enterprises at 0847652379">
+            <span aria-hidden="true">●</span> 0847652379
+          </a> -->
+          <a class="top-band-call-icon" href="tel:0847652379" aria-label="Call Shayona Enterprises at 0847652379">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                      19.79 19.79 0 0 1-8.63-3.07
+                      19.5 19.5 0 0 1-6-6
+                      19.79 19.79 0 0 1-3.07-8.67
+                      A2 2 0 0 1 4.11 2h3
+                      a2 2 0 0 1 2 1.72
+                      c.12.89.33 1.76.63 2.6
+                      a2 2 0 0 1-.45 2.11L8.09 9.91
+                      a16 16 0 0 0 6 6l1.48-1.2
+                      a2 2 0 0 1 2.11-.45
+                      c.84.3 1.71.51 2.6.63
+                      A2 2 0 0 1 22 16.92z"/>
+            </svg> 0847652379
+          </a>
+        </div>
+      </div>
+      <!-- mobile nav -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Shayona Enterprises home">
+          <img class="brand__mark" src="./img/logo.png" alt="Shayona Enterprises logo" />
+          <span class="brand__name">Shayona<br/>Enterprises</span>
+        </a>
+
+        <span class="nav-divider nav-divider--brand" aria-hidden="true"></span>
+
+        <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-content" id="mobileDrawer">
+          <div class="mobile-drawer__header">
+            <div>
+              <span class="mobile-drawer__eyebrow">Shayona Enterprises</span>
+              <strong>Menu</strong>
+            </div>
+            <button class="mobile-drawer__close" type="button" aria-label="Close menu">
+              <span aria-hidden="true"></span><span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="nav-links">
+            <a class="nav-link is-active" href="#home" data-mobile-link><span class="nav-link__icon" aria-hidden="true">⌂</span><span>Home</span></a>
+            <a class="nav-link" href="#service" data-mobile-link><span class="nav-link__icon" aria-hidden="true">○</span><span>Service</span></a>
+            <div class="products-nav-item">
+              <button class="nav-link products-trigger" type="button" aria-expanded="false" aria-controls="productsMenu mobileProducts">
+                <span class="nav-link__icon" aria-hidden="true">▦</span><span class="nav-link__text" id="mob-product-sorav">Products</span><span class="chevron" aria-hidden="true"></span>
+              </button>
+              <div class="mobile-products-accordion" id="mobileProducts" aria-hidden="true">
+                <a href="/products/wall-panels" data-mobile-link>Wall Panels <span aria-hidden="true">↗</span></a>
+                <a href="/products/doors" data-mobile-link>Laminates <span aria-hidden="true">↗</span></a>
+                <a href="/products/laminates-wood" data-mobile-link>Door <span aria-hidden="true">↗</span></a>
+                <a href="/products/laminates-veneers" data-mobile-link>Plywood &amp; Boards<span aria-hidden="true">↗</span></a>
+                <a href="/products/flooring" data-mobile-link>Acrylic &amp; Decorative Sheets <span aria-hidden="true">↗</span></a>
+                <a href="/products/acrylic-decorative-sheets" data-mobile-link>Mouldings &amp; Profiles <span aria-hidden="true">↗</span></a>
+                <a href="/products/wall-moulding-bending" data-mobile-link>Furniture <span aria-hidden="true">↗</span></a>
+                <a href="/products/furniture" data-mobile-link>Flooring <span aria-hidden="true">↗</span></a>
+                <a href="/products/modular-kitchens" data-mobile-link>Modular Kitchens <span aria-hidden="true">↗</span></a>
+                <a href="/products/interior-accessories" data-mobile-link>Interior Accessories <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <a class="nav-link" href="#projects" data-mobile-link><span class="nav-link__icon" aria-hidden="true">◇</span><span>Projects</span></a>
+            <a class="nav-link" href="#aboutus" data-mobile-link><span class="nav-link__icon" aria-hidden="true">✦</span><span>About Us</span></a>
+            <a class="nav-link" href="#contact" data-mobile-link><span class="nav-link__icon" aria-hidden="true">✉</span><span>Contact</span></a>
+          </div>
+          <span class="nav-divider nav-divider--quote" aria-hidden="true"></span>
+          <button class="quote-button" type="button" data-open-quote>
+            Get a quote <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <button class="menu-backdrop" type="button" aria-label="Close navigation"></button>
+
+  <!-- desktop nav -->
+        <section class="mega-menu" id="productsMenu" aria-label="Product categories" aria-hidden="true">
+          <div class="mega-menu__inner">
+            <div class="category-panel">
+              <p class="eyebrow">Explore our range</p>
+              <div class="category-list" role="tablist" aria-label="Product categories">
+                <button class="category is-selected" type="button" role="tab" aria-selected="true" data-category="wall-panels">01 <span>Wall Panels</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="doors">02 <span>Doors</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="laminate-wood">03 <span>Laminates</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="veneers">04 <span>Plywood &amp; Boards</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="flooring">05 <span>Acrylic &amp; Decorative Sheets</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="sheets">06 <span>Mouldings &amp; Profiles</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="moulding">07 <span>Furniture</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="furniture">08 <span>Flooring</span></button>
+                <!-- <button class="category" type="button" role="tab" aria-selected="false" data-category="kitchens">09 <span>Modular Kitchens</span></button>
+                <button class="category" type="button" role="tab" aria-selected="false" data-category="accessories">10 <span>Interior Accessories</span></button> -->
+              </div>
+            </div>
+            <a class="product-feature" href="#products" aria-label="Explore Wall Panels">
+              <img class="product-feature__image" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1500&q=85" alt="Warm wood panelled interior" />
+              <span class="product-feature__shade" aria-hidden="true"></span>
+              <span class="product-feature__copy">
+                <span class="eyebrow">Signature collection</span>
+                <strong class="product-feature__title">Wall Panels</strong>
+                <span class="product-feature__description">Surface statements made for exceptional interiors.</span>
+                <span class="explore-link">Explore collection <b>→</b></span>
+              </span>
+            </a>
+          </div>
+        </section>
+      </nav>
+    </header>
+<!-- Hero section -->
+  <section class="hero" id="hero">
+    <div class="slide active"><img src="./img/slider-img1.png" alt="Luxury Living" loading="eager" /></div>
+    <div class="slide"><img src="./img/slider-img2.png" alt="Premium Furniture" loading="lazy" /></div>
+    <div class="slide"><img src="./img/slider-img3.png" alt="Modular Kitchen" loading="lazy" /></div>
+    <div class="slide"><img src="./img/slider-img4.png" alt="Interior Pan India" loading="lazy" /></div>
+
+    <!-- sorav slider comment -->
+    <!-- <div class="slide active"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" alt="Luxury Living" loading="eager" /></div>
+    <div class="slide"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Premium Furniture" loading="lazy" /></div>
+    <div class="slide"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80" alt="Modular Kitchen" loading="lazy" /></div>
+    <div class="slide"><img src="https://images.unsplash.com/photo-1600566753086-00f18f6e0180?w=1920&q=80" alt="Interior Pan India" loading="lazy" /></div> -->
+
+    <div class="overlay"></div>
+    <div class="content-wrapper">
+      <div class="content-inner">
+        <div class="slide-text active" data-index="0">
+          <span class="line2">Complete Interior Solution</span>
+          <p class="subtitle">Transform your space with our comprehensive interior design solutions. From concept to completion, we craft environments that inspire.</p>
+          <a href="#" id="cta-btn1" class="cta-btn">Begin Your Journey <span class="arrow-wrap"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        </div>
+        <div class="slide-text" data-index="1">
+          <span class="line2">Premium Furniture</span>
+          <p class="subtitle">Curated collections of finest furniture pieces. Each item selected to bring elegance, comfort, and lasting beauty to your home.</p>
+          <a href="#" id="cta-btn2" class="cta-btn">Begin Your Journey <span class="arrow-wrap"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        </div>
+        <div class="slide-text" data-index="2">
+          <span class="line2">Modular Kitchen</span>
+          <p class="subtitle">Intelligent modular kitchen designs that blend aesthetics with functionality. Custom layouts for the heart of your home.</p>
+          <a href="#" id="cta-btn3" class="cta-btn">Begin Your Journey <span class="arrow-wrap"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        </div>
+        <div class="slide-text" data-index="3">
+          <span class="line2">Commercial Space</span>
+          <p class="subtitle">Complete furniture solutions for commercial spaces,
+corporate offices, hospitals, and healthcare facilities.</p>
+          <a href="#" id="cta-btn4" class="cta-btn">Begin Your Journey <span class="arrow-wrap"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="right-nav">
+      <button class="nav-btn" id="navUp">&#9650;</button>
+      <div class="nav-dots">
+        <span class="nav-dot active" data-slide="0"></span>
+        <span class="nav-dot" data-slide="1"></span>
+        <span class="nav-dot" data-slide="2"></span>
+        <span class="nav-dot" data-slide="3"></span>
+      </div>
+      <button class="nav-btn" id="navDown">&#9660;</button>
+    </div>
+  </section>
+
+<!-- sorav main -->
+<section id="sec2"> </section>Wholesaler/Distributor
+    <script src="./script.js"></script>
+  </body>
+</html>
